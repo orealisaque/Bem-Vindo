@@ -3,42 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acesso em Processamento</title>
+    <title>Compra Confirmada</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: white;
+            background: #091219;
+            color: #f1f0ef;
             text-align: center;
             overflow: hidden;
         }
         .container {
             animation: fadeIn 1.5s ease-in-out;
+            max-width: 90%;
+            padding: 20px;
         }
         h1 {
-            font-size: 24px;
+            font-size: 26px;
+            font-weight: 600;
+            color: #ffc823;
         }
         p {
             font-size: 18px;
             margin-top: 10px;
+            font-weight: 300;
         }
-        .loader {
+        .completed {
             margin: 20px auto;
-            border: 5px solid rgba(255, 255, 255, 0.3);
-            border-top: 5px solid white;
+            font-size: 50px;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            animation: spin 1s linear infinite;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            background: #ffc823;
+            color: #091219;
+            box-shadow: 0 0 15px rgba(255, 200, 35, 0.5);
         }
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(-20px); }
@@ -48,9 +55,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>Seu acesso está sendo preparado! 🚀</h1>
-        <p>Dentro de até <strong>3 dias úteis</strong>, você receberá os detalhes para entrar na área de membros.</p>
-        <div class="loader"></div>
+        <h1>Obrigado pela sua compra! 🎉</h1>
+        <p>Seu acesso à área de membros está sendo preparado e será liberado dentro de até <strong>3 dias úteis</strong>.</p>
+        <div class="completed">
+            <i class="fas fa-check"></i>
+        </div>
         <p>Agradecemos a sua paciência! Em breve, você terá acesso ao conteúdo exclusivo.</p>
     </div>
 </body>
